@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Head>
-        <title>Next.js + Tailwind CSS</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Megaverse</title>
+        <link rel="icon" href="/public/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
     </main>
