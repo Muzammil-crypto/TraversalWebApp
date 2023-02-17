@@ -1,4 +1,4 @@
-import { H1, H2, H4, H6 } from "@/components/base/Typography/Typography";
+import { H2 } from "@/components/base/Typography/Typography";
 import Image from "next/image";
 import React from "react";
 import Button from "@mui/material/Button";

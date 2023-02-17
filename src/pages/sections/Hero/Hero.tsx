@@ -1,4 +1,4 @@
-import { H1, H4, H6 } from "@/components/base/Typography/Typography";
+import { H1, H4, H5, H6 } from "@/components/base/Typography/Typography";
 import Image from "next/image";
 import React from "react";
 import Button from "@mui/material/Button";
@@ -16,9 +16,9 @@ export const Hero = () => {
         <div className="flex flex-row h-full">
           <div className="w-3/6  justify-center flex flex-col pl-32 ">
             <H1 className="text-left  ">{heroHeading}</H1>
-            <H4 style={{ marginTop: 29 }} className="text-left ">
+            <H5 style={{ marginTop: 29 }} className="text-left ">
               {tagLine}
-            </H4>
+            </H5>
             <div>
               <Button className="bg-primary mt-7 " variant="contained">
                 Contact Us
