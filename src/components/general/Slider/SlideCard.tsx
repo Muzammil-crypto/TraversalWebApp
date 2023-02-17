@@ -1,14 +1,23 @@
 import { ArrowButton } from "@/components/base/ArrowButton/ArrowButton";
 import { H4, Paragraph } from "@/components/base/Typography/Typography";
+import { id } from "date-fns/locale";
 import Image from "next/image";
 import React from "react";
 
-export const SlideCard = () => {
+export const SlideCard = (props: {
+  title: string;
+  description: string;
+  image: string;
+}) => {
+  const { title, description, image } = props;
   return (
-    <div className="  h-2/3 w-1/4 bg-secondary rounded-2xl shadow-3xl justify-center items-center flex flex-col mt-14">
+    <div
+      style={{ width: 340, height: 414 }}
+      className="  h-2/3 w-1/4 bg-secondary rounded-2xl shadow-3xl justify-center items-center flex flex-col mt-14"
+    >
       <div>
         <Image
-          src="/mobile.svg"
+          src={image}
           alt="Picture of the author"
           width={167}
           height={167}
@@ -16,11 +25,8 @@ export const SlideCard = () => {
         />
       </div>
       <div>
-        <H4 className="text-center ">Web Development</H4>
-        <Paragraph className="text-left  px-5 ">
-          Start working with an company that provide everything you need to any
-          create awareness drive.
-        </Paragraph>
+        <H4 className="text-center ">{title}</H4>
+        <Paragraph className="text-left  px-5 ">{description}</Paragraph>
       </div>
       <ArrowButton />
     </div>
