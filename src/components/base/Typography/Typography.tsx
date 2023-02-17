@@ -53,8 +53,6 @@ const Typography: React.FC<CustomProps> = styled.div<CustomProps>`
 export const H1: React.FC<CustomProps> = (props) => (
   <Typography
     as="h1"
-    mb="0"
-    mt="0"
     fontSize="48px"
     fontWeight={700}
     lineHeight="56.25px"
@@ -63,38 +61,52 @@ export const H1: React.FC<CustomProps> = (props) => (
   />
 );
 export const H2: React.FC<CustomProps> = (props) => (
-  <Typography as="h2" mb="0" mt="0" fontSize="25px" {...props} />
+  <Typography
+    as="h2"
+    fontSize="40px"
+    fontWeight={700}
+    lineHeight="46.88px"
+    fontFamily={"sans-serif"}
+    {...props}
+  />
 );
 export const H3: React.FC<CustomProps> = (props) => (
-  <Typography as="h3" mb="0" mt="0" fontSize="20px" {...props} />
+  <Typography
+    as="h3"
+    fontSize="35px"
+    fontWeight={700}
+    lineHeight="41.02px"
+    fontFamily={"sans-serif"}
+    {...props}
+  />
 );
 export const H4: React.FC<CustomProps> = (props) => (
   <Typography
     as="h4"
-    mb="0"
-    mt="0"
-    fontWeight="400"
     fontSize="26px"
+    fontWeight={700}
+    lineHeight="41.02px"
+    fontFamily={"sans-serif"}
     {...props}
   />
 );
 export const H5: React.FC<CustomProps> = (props) => (
   <Typography
     as="h5"
-    mb="0"
-    mt="0"
-    fontWeight="600"
-    fontSize="16px"
+    fontSize="26px"
+    fontWeight={400}
+    lineHeight="35.52px"
+    fontFamily={"sans-serif"}
     {...props}
   />
 );
 export const H6: React.FC<CustomProps> = (props) => (
   <Typography
     as="h6"
-    mb="0"
-    mt="0"
-    fontWeight="400"
-    fontSize="14px"
+    fontSize="16px"
+    fontWeight={400}
+    lineHeight="21.79px"
+    fontFamily={"sans-serif"}
     {...props}
   />
 );
