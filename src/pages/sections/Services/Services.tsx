@@ -1,5 +1,5 @@
 import { H2 } from "@/components/base/Typography/Typography";
-import React from "react";
+import React, { useRef } from "react";
 import { Ourservices, services } from "@/consts/consts";
 import { SlideCard } from "@/components/general/Slider/SlideCard";
 import { Navigation, Thumbs, Pagination } from "swiper";
@@ -7,11 +7,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { SlideLeft } from "@/components/general/Slider/SliderLeft";
+import { SlideRight } from "@/components/general/Slider/SlideRight";
+import { marginTop } from "styled-system";
 export const Services = () => {
+  const swiperRef = useRef<any>(null);
+
   return (
     <div className="h-screen w-screen flex items-center justify-center flex-col">
       <div className="w-screen h-3/4 mt-10 flex items-center justify-center flex-col">
         <H2 className="text-center">{services}</H2>
+        <div className="flex flex-row">
+          <SlideLeft onTap={() => swiperRef?.current?.swiper?.slideNext()} />
+          <SlideRight
+            styles={{ marginLeft: 1000 }}
+            onTap={() => swiperRef?.current?.swiper?.slidePrev()}
+          />
+        </div>
+
         <Swiper
           style={{ overflow: "inherit", marginTop: 48, width: "100%" }}
           pagination={true}
@@ -20,6 +33,7 @@ export const Services = () => {
           grabCursor={true}
           modules={[Navigation, Thumbs, Pagination]}
           spaceBetween={39}
+          ref={swiperRef}
           breakpoints={{
             1410: {
               width: 1220,
