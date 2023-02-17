@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -81,7 +80,7 @@
 }
 
 .center::before {
-  background: var(--secondary-glow);
+  background: white;
   border-radius: 50%;
   width: 480px;
   height: 360px;
@@ -89,7 +88,7 @@
 }
 
 .center::after {
-  background: var(--primary-glow);
+  background: white;
   width: 240px;
   height: 180px;
   z-index: -1;
