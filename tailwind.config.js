@@ -18,6 +18,7 @@ module.exports = {
       'fontColor': '#292929',
       'black': '#000000',
       'primary': '#77BB3F',
+      'secondary': '#E1ECD8',
       'pink': '#ff49db',
       'orange': '#ff7849',
       'green': '#13ce66',
@@ -37,6 +38,9 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      boxShadow: {
+        '3xl': '4px 4px 4px rgba(0, 0, 0, 0.25)',
       }
     }
   },
