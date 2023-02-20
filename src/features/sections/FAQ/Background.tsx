@@ -6,14 +6,14 @@ export const BackgroundImage = () => {
     <>
       <Image
         alt="vector"
-        src="/process.svg"
-        height={2673.55}
-        width={3123.11}
+        src="/srect.svg"
+        height={626}
+        width={1343}
         style={{
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: "38%",
+          marginTop: "28%",
         }}
       />
     </>

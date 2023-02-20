@@ -1,0 +1,6 @@
+.mainContainer{
+    @apply flex flex-col items-center justify-center w-full h-full;
+}
+.introImg{
+    @apply mt-32
+}

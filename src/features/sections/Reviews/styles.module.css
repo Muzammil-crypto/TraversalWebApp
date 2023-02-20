@@ -1,5 +1,5 @@
 .mainBox {
-  @apply h-screen w-full flex items-center justify-center flex-col mt-96  bg-fontColor
+  @apply h-screen w-full flex items-center justify-center flex-col   bg-fontColor 
 }
 .feedBack{
     @apply h-10 w-80 bg-primary flex justify-center items-center flex-row
@@ -19,4 +19,27 @@
   .swiper{
     @apply overflow-hidden mt-12 w-full flex items-center justify-center
   }
-
+.introParagraph{
+    @apply  h-12 w-144 text-white text-center
+}
+.buttonsContainer{
+    @apply flex flex-row w-full ml-64
+}
+.leftButton{
+    @apply border-white text-white
+}
+.rightButton{
+    @apply ml-144 border-white text-white
+}
+.reviewCard{
+   @apply flex justify-center items-center h-2/3 flex-col
+}
+.colBox{
+   @apply flex flex-col justify-center items-center h-24 w-24 rounded-full bg-primary m-8
+}
+.reviewPara{
+  @apply  h-12 w-144 text-white text-center
+}
+.clientName{
+    @apply pt-5 text-white
+}

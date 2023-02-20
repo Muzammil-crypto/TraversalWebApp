@@ -3,12 +3,14 @@ import { Spacer } from "@/components/base/Spacer/Spacer";
 import { H2, Paragraph } from "@/components/base/Typography/Typography";
 import { procs } from "@/consts/consts";
 import React from "react";
+import { BackgroundVectors } from "./BackgroundVectors";
 import { ProcessCard } from "./ProcessCard";
 import styles from "./styles.module.css";
 
 export const Processes = () => {
   return (
     <div className={styles.mainBox}>
+      <BackgroundVectors />
       <H2>Our Processes</H2>
       <Spacer spacerStyles={styles.img} />
       <Paragraph>We follow agile methodology in our system.</Paragraph>

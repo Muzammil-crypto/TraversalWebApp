@@ -1,0 +1,15 @@
+.mainBody{
+    @apply flex flex-col items-center justify-center mt-32
+}
+.spacer{
+    @apply ml-24
+}
+.textDiv{
+    @apply w-full ml-80
+}
+.slagLine{
+    @apply mt-80 text-left text-white
+}
+.slagPara{
+  @apply  mt-80 text-left text-white
+}

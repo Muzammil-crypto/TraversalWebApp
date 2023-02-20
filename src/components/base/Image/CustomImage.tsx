@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { CSSProperties } from "styled-components";
 
 export const CustomImage = (props: {
   url: string;
@@ -7,8 +8,9 @@ export const CustomImage = (props: {
   height: number;
   width: number;
   classStyles?: string;
+  backgroundStyles?: CSSProperties;
 }) => {
-  const { url, alt, height, width, classStyles } = props;
+  const { url, alt, height, width, classStyles, backgroundStyles } = props;
   return (
     <Image
       src={url}
@@ -16,6 +18,7 @@ export const CustomImage = (props: {
       height={height}
       width={width}
       className={classStyles}
+      style={backgroundStyles}
     />
   );
 };

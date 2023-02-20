@@ -1,7 +1,7 @@
 import { CustomImage } from "@/components/base/Image/CustomImage";
 import { H1, H6, Paragraph } from "@/components/base/Typography/Typography";
 import React, { useRef } from "react";
-import { BackgroundImage } from "./Background";
+// import { BackgroundImage } from "./Background";
 import { ReviewCard } from "./ReviewCard";
 import styles from "./styles.module.css";
 import { Navigation, Thumbs, Pagination } from "swiper";
@@ -17,7 +17,7 @@ export const Reviews = () => {
 
   return (
     <div className={styles.mainBox}>
-      <BackgroundImage />
+      {/* <BackgroundImage /> */}
 
       <div className={styles.feedBack}>
         <CustomImage
@@ -38,7 +38,7 @@ export const Reviews = () => {
       </div>
 
       <H1 className={styles.head}>Client Reviews</H1>
-      <Paragraph className=" h-12 w-144 text-white text-center">
+      <Paragraph className={styles.introParagraph}>
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. It is a long
         established fact that a reader.
@@ -60,13 +60,13 @@ export const Reviews = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="flex flex-row w-full ml-64">
+        <div className={styles.buttonsContainer}>
           <SlideLeft
-            classname="border-white text-white"
+            classname={styles.leftButton}
             onTap={() => swiperRef?.current?.swiper?.slideNext()}
           />
           <SlideRight
-            classname=" ml-144 border-white text-white"
+            classname={styles.rightButton}
             onTap={() => swiperRef?.current?.swiper?.slidePrev()}
           />
         </div>
