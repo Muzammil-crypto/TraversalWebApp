@@ -12,6 +12,7 @@ import { SlideRight } from "@/components/general/Slider/SlideRight";
 import styles from "./styles.module.css";
 import { CustomImage } from "@/components/base/Image/CustomImage";
 import { BackgroundVectors } from "../Processes/BackgroundVectors";
+import { CustomButton } from "@/components/base/Button/Button";
 export const Services = () => {
   const swiperRef = useRef<any>(null);
   return (
@@ -29,7 +30,7 @@ export const Services = () => {
         </div>
         <div className={styles.servicesContainer}>
           <Swiper
-            style={{ overflow: "inherit", marginTop: 48, width: "100%" }}
+            className={styles.swiper}
             pagination={true}
             autoplay={true}
             loop={true}
@@ -93,6 +94,7 @@ export const Services = () => {
               with our clients to understand their requirements and deliver
               customized solutions.
             </Paragraph>
+            <CustomButton child="Contact Us" classStyles={styles.button} />
           </div>
         </div>
       </div>

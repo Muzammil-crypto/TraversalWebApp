@@ -18,6 +18,7 @@ module.exports = {
       'fontColor': '#292929',
       'white': '#FFFFFF',
       'black': '#000000',
+      'blend': 'rgba(0, 0, 0, 0.84)',
       'primary': '#77BB3F',
       'secondary': '#E1ECD8',
       'pink': '#ff49db',

@@ -1,0 +1,17 @@
+.mainBox {
+  @apply h-screen w-full flex items-center justify-center flex-col mt-96  bg-fontColor
+}
+.feedBack{
+    @apply h-10 w-80 bg-primary flex justify-center items-center flex-row
+}
+.line{
+    @apply mr-2 ml-2
+}
+.feedbackText{
+    @apply text-white font-bold 
+}
+.head{
+  @apply  text-white mt-5
+}
+
+
