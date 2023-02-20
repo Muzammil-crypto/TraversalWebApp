@@ -11,10 +11,13 @@ import { SlideLeft } from "@/components/general/Slider/SliderLeft";
 import { SlideRight } from "@/components/general/Slider/SlideRight";
 import styles from "./styles.module.css";
 import { CustomImage } from "@/components/base/Image/CustomImage";
+import { BackgroundVectors } from "../Processes/BackgroundVectors";
 export const Services = () => {
   const swiperRef = useRef<any>(null);
   return (
     <div className={styles.mainBox}>
+      <BackgroundVectors />
+
       <div className={styles.childBox}>
         <H2 className={styles.heading}>{services}</H2>
         <div className="flex flex-row">
@@ -24,50 +27,51 @@ export const Services = () => {
             onTap={() => swiperRef?.current?.swiper?.slidePrev()}
           />
         </div>
-
-        <Swiper
-          style={{ overflow: "inherit", marginTop: 48, width: "100%" }}
-          pagination={true}
-          autoplay={true}
-          loop={true}
-          grabCursor={true}
-          modules={[Navigation, Thumbs, Pagination]}
-          spaceBetween={39}
-          ref={swiperRef}
-          breakpoints={{
-            1410: {
-              width: 1220,
-              slidesPerView: 3,
-            },
-            1160: {
-              width: 1100,
-              slidesPerView: 3,
-            },
-            900: {
-              width: 900,
-              slidesPerView: 3,
-            },
-            800: {
-              width: 820,
-              slidesPerView: 2,
-            },
-            700: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
-        >
-          {Ourservices.map((item, val) => (
-            <SwiperSlide key={val}>
-              <SlideCard
-                key={item.id}
-                title={item.title}
-                description={item.description}
-                image={item.image}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className={styles.servicesContainer}>
+          <Swiper
+            style={{ overflow: "inherit", marginTop: 48, width: "100%" }}
+            pagination={true}
+            autoplay={true}
+            loop={true}
+            grabCursor={true}
+            modules={[Navigation, Thumbs, Pagination]}
+            spaceBetween={39}
+            ref={swiperRef}
+            breakpoints={{
+              1410: {
+                width: 1220,
+                slidesPerView: 3,
+              },
+              1160: {
+                width: 1100,
+                slidesPerView: 3,
+              },
+              900: {
+                width: 900,
+                slidesPerView: 3,
+              },
+              800: {
+                width: 820,
+                slidesPerView: 2,
+              },
+              700: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
+          >
+            {Ourservices.map((item, val) => (
+              <SwiperSlide key={val}>
+                <SlideCard
+                  key={item.id}
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
       <div className={styles.about}>
         <div className={styles.imageBox}>

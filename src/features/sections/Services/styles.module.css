@@ -23,3 +23,6 @@
 .info{
     @apply text-left w-128 ml-20
 }
+.servicesContainer{
+  @apply m-auto overflow-hidden w-5/6 
+}

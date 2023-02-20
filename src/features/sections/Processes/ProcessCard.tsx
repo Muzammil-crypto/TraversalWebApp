@@ -1,6 +1,5 @@
 import { CustomImage } from "@/components/base/Image/CustomImage";
-import { H5, H6 } from "@/components/base/Typography/Typography";
-import { id } from "date-fns/locale";
+import { H5 } from "@/components/base/Typography/Typography";
 import React from "react";
 import styles from "./styles.module.css";
 

@@ -1,5 +1,5 @@
 .mainBox{
-    @apply h-1/2 w-screen flex items-center  flex-col mt-60
+    @apply h-1/2 w-screen flex items-center  flex-col mt-60 
 }
 .processes{
     @apply flex flex-col justify-center mt-20 
