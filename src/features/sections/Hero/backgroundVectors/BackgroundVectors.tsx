@@ -26,10 +26,10 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 196,
+          marginTop: "12%",
           maxHeight: 480,
           maxWidth: 480,
-          left: -220,
+          left: "-13%",
         }}
       />
       <Image
@@ -41,8 +41,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 175,
-          marginLeft: 179,
+          marginTop: "10%",
+          marginLeft: "11%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -56,8 +56,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 248,
-          marginLeft: 310,
+          marginTop: "15%",
+          marginLeft: "18%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -71,8 +71,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 270,
-          marginLeft: 434,
+          marginTop: "16%",
+          marginLeft: "27.7%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -86,8 +86,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 623,
-          marginLeft: 453,
+          marginTop: "38%",
+          marginLeft: "27.7%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -101,8 +101,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 567,
-          marginLeft: 554,
+          marginTop: "34%",
+          marginLeft: "34%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -116,8 +116,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 520,
-          marginLeft: 700,
+          marginTop: "31%",
+          marginLeft: "42%",
           maxHeight: 56,
           maxWidth: 56,
         }}
@@ -131,8 +131,8 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginTop: 700,
-          marginLeft: 1289,
+          marginTop: "46%",
+          marginLeft: "89%",
         }}
       />
     </>

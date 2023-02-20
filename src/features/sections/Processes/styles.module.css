@@ -1,0 +1,31 @@
+.mainBox{
+    @apply h-1/2 w-screen flex items-center  flex-col mt-60
+}
+.processes{
+    @apply flex flex-col justify-center mt-20 
+}
+.img{
+    @apply ml-20
+}
+.processCard{
+    @apply h-48 w-48 flex flex-col items-center justify-center bg-white rounded-full shadow-normal
+}
+.cardContainer{
+    @apply flex flex-col items-center justify-center
+}
+.circle{
+    @apply flex flex-row 
+}
+.headingContainer{
+ @apply  mr-36 mt-7
+
+}
+.img{
+    @apply ml-20 
+}
+.mapContainer{
+    @apply flex h-128  w-screen justify-center ml-36 
+}
+.parentBox{
+   @apply w-screen
+}

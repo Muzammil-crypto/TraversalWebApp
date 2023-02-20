@@ -1,0 +1,21 @@
+.mainHeroBox{
+    @apply h-full w-full 
+}
+.heroBody{
+  @apply w-full h-3/4 mt-10
+}
+.rowBox{
+    @apply flex flex-row h-full
+}
+.leftBox{
+    @apply w-3/6  justify-center flex flex-col pl-32 
+}
+.heading{
+    @apply text-left  
+}
+.button{
+    @apply bg-primary mt-7 hover:bg-primary
+}
+.rightBox{
+   @apply w-3/6 flex items-center justify-center 
+}

@@ -1,4 +1,4 @@
-import { H2 } from "@/components/base/Typography/Typography";
+import { H2, H4, Paragraph } from "@/components/base/Typography/Typography";
 import React, { useRef } from "react";
 import { Ourservices, services } from "@/consts/consts";
 import { SlideCard } from "@/components/general/Slider/SlideCard";
@@ -9,14 +9,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { SlideLeft } from "@/components/general/Slider/SliderLeft";
 import { SlideRight } from "@/components/general/Slider/SlideRight";
-import { marginTop } from "styled-system";
+import styles from "./styles.module.css";
+import { CustomImage } from "@/components/base/Image/CustomImage";
 export const Services = () => {
   const swiperRef = useRef<any>(null);
-
   return (
-    <div className="h-screen w-screen flex items-center justify-center flex-col">
-      <div className="w-screen h-3/4 mt-10 flex items-center justify-center flex-col">
-        <H2 className="text-center">{services}</H2>
+    <div className={styles.mainBox}>
+      <div className={styles.childBox}>
+        <H2 className={styles.heading}>{services}</H2>
         <div className="flex flex-row">
           <SlideLeft onTap={() => swiperRef?.current?.swiper?.slideNext()} />
           <SlideRight
@@ -68,6 +68,29 @@ export const Services = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className={styles.about}>
+        <div className={styles.imageBox}>
+          <CustomImage
+            url="/fram.svg"
+            alt="about"
+            height={442}
+            width={692}
+            classStyles={styles.img}
+          />
+        </div>
+        <div className={styles.infoBox}>
+          <div className={styles.info}>
+            <H4 className={styles.aboutHeading}>What we do?</H4>
+            <Paragraph>
+              Our goal is to provide our clients with high-quality, scalable and
+              reliable solutions that meet their unique business needs. We take
+              a collaborative approach to software development and work closely
+              with our clients to understand their requirements and deliver
+              customized solutions.
+            </Paragraph>
+          </div>
+        </div>
       </div>
     </div>
   );

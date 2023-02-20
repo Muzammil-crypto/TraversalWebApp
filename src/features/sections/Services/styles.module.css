@@ -1,0 +1,25 @@
+.mainBox{
+    @apply h-screen w-screen flex items-center justify-center flex-col mt-96
+}
+.childBox{
+  @apply  w-screen h-3/4 mt-10 flex items-center justify-center flex-col
+}
+.heading{
+    @apply text-center
+}
+.about{
+    @apply w-full flex flex-row mt-32
+}
+.aboutHeading{
+    @apply text-left
+}
+.imageBox{
+  @apply w-1/2 flex items-center justify-center p-12
+}
+.infoBox{
+  @apply w-1/2 flex justify-center flex-col 
+
+}
+.info{
+    @apply text-left w-128 ml-20
+}

@@ -14,8 +14,9 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'background': '#ffffff',
+      'background': '#F5F5F5',
       'fontColor': '#292929',
+      'white': '#FFFFFF',
       'black': '#000000',
       'primary': '#77BB3F',
       'secondary': '#E1ECD8',
@@ -41,6 +42,8 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '4px 4px 4px rgba(0, 0, 0, 0.25)',
+        'normal': '0px 4px 4px rgba(0, 0, 0, 0.25)'
+        
       }
     }
   },
