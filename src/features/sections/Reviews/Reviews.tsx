@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { SlideLeft } from "@/components/general/Slider/SliderLeft";
 import { SlideRight } from "@/components/general/Slider/SlideRight";
-import { SlideCard } from "@/components/general/Slider/SlideCard";
 import { reviews } from "@/consts/consts";
 export const Reviews = () => {
   const swiperRef = useRef<any>(null);
@@ -62,9 +61,12 @@ export const Reviews = () => {
           ))}
         </Swiper>
         <div className="flex flex-row w-full ml-64">
-          <SlideLeft onTap={() => swiperRef?.current?.swiper?.slideNext()} />
+          <SlideLeft
+            classname="border-white text-white"
+            onTap={() => swiperRef?.current?.swiper?.slideNext()}
+          />
           <SlideRight
-            classname=" ml-144"
+            classname=" ml-144 border-white text-white"
             onTap={() => swiperRef?.current?.swiper?.slidePrev()}
           />
         </div>
