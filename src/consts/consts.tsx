@@ -87,3 +87,20 @@ export const procs = [
     logo: "/pro4.svg",
   },
 ];
+
+export const reviews = [
+  {
+    id: 1,
+    name: "John Doe",
+    image: "/profile.svg",
+    review:
+      " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long      established fact that a reader. It is a long established fact that       reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader",
+  },
+  {
+    id: 2,
+    name: "Jehbu Kos",
+    image: "/profile.svg",
+    review:
+      " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long      established fact that a reader. It is a long established fact that       reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader",
+  },
+];
