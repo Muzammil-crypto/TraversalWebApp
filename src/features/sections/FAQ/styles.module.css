@@ -1,15 +1,48 @@
 .mainBody{
     @apply flex flex-col items-center justify-center mt-32
 }
+.childBody{
+    @apply flex flex-row  items-center justify-center w-full h-full  mt-56
+}
 .spacer{
     @apply ml-24
 }
+.upperBox{
+    @apply flex flex-col  h-144 w-1/2  ml-auto mr-32 items-center justify-center
+}
+.lowerBox{
+    @apply flex flex-col bg-background h-128 w-96 ml-auto rounded-lg pt-3 items-center
+}
 .textDiv{
-    @apply w-full ml-80
+    @apply w-96  h-128 ml-36
 }
 .slagLine{
-    @apply mt-80 text-left text-white
+    @apply  mt-64 mb-10 text-left text-white italic tracking-wide text-2xl
 }
 .slagPara{
   @apply  mt-80 text-left text-white
+}
+
+.nameField{
+@apply py-3 mt-3  mb-3 px-2
+}
+.emailField{
+    @apply py-3 mt-3  mb-3 px-2
+
+}
+.phoneField{
+    @apply py-3 mt-3  mb-3 px-2
+
+}
+.messageField{
+    @apply py-12 mt-3  mb-3 px-2
+
+}
+.checkboxField{
+    @apply flex flex-row justify-start w-full mt-3
+
+}
+.submitButton{
+    @apply flex w-full h-32 pl-9 items-center
+
 }
