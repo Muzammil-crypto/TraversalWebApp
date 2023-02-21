@@ -16,6 +16,19 @@ export const BackgroundImage = () => {
           marginTop: "28%",
         }}
       />
+      <Image
+        alt="vector"
+        src="/u.svg"
+        height={650}
+        width={514}
+        style={{
+          position: "absolute",
+          content: "",
+          zIndex: -1,
+          marginTop: "23%",
+          marginLeft: "20%",
+        }}
+      />
     </>
   );
 };

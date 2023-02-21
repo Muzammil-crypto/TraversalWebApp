@@ -1,5 +1,5 @@
 .mainHeroBox{
-    @apply h-full w-full 
+    @apply h-full w-full overflow-scroll
 }
 .heroBody{
   @apply w-full h-3/4 mt-10

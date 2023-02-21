@@ -58,7 +58,7 @@ export const Faq = () => {
                 type="checkbox"
                 placeholder="Message"
                 value=""
-                inputStyles="w-20 h-5 ml-3"
+                inputStyles="w-16 h-5 "
               />
               <text className="text-sm w-96">
                 I have read and accept the privacy policy.

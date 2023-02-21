@@ -1,8 +1,8 @@
 .mainBody{
-    @apply flex flex-col items-center justify-center mt-32
+    @apply flex flex-col items-center justify-center mt-56
 }
 .childBody{
-    @apply flex flex-row  items-center justify-center w-full h-full  mt-56
+    @apply flex flex-row  items-center justify-center w-full h-full  mt-20
 }
 .spacer{
     @apply ml-24
@@ -17,7 +17,7 @@
     @apply w-96  h-128 ml-36
 }
 .slagLine{
-    @apply  mt-64 mb-10 text-left text-white italic tracking-wide text-2xl
+    @apply  mt-64 text-left text-white italic tracking-wide text-2xl
 }
 .slagPara{
   @apply  mt-80 text-left text-white
@@ -39,7 +39,7 @@
 
 }
 .checkboxField{
-    @apply flex flex-row justify-start w-full mt-3
+    @apply flex flex-row justify-start mt-3 ml-10 w-full
 
 }
 .submitButton{

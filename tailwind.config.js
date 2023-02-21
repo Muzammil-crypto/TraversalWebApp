@@ -14,6 +14,7 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
+      'footer': '#292929',
       'background': '#F5F5F5',
       'fontColor': '#292929',
       'white': '#FFFFFF',
