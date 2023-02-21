@@ -104,3 +104,31 @@ export const reviews = [
       " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long      established fact that a reader. It is a long established fact that       reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader",
   },
 ];
+
+export const footermenu = [
+  {
+    id: 1,
+    title: "About Us",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "Services",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "Teams",
+    link: "/",
+  },
+  {
+    id: 5,
+    title: "Contact Us",
+    link: "/",
+  },
+];

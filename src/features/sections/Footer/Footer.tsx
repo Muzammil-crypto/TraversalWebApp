@@ -1,7 +1,14 @@
 import { CustomButton } from "@/components/base/Button/Button";
 import { InputField } from "@/components/base/InputField/InputField";
-import { H2, H4, H6, Paragraph } from "@/components/base/Typography/Typography";
+import {
+  H2,
+  H4,
+  H5,
+  H6,
+  Paragraph,
+} from "@/components/base/Typography/Typography";
 import { Logo } from "@/components/general/Header/Logo";
+import { footermenu } from "@/consts/consts";
 import React from "react";
 import { Icon } from "./Icons/Icon";
 
@@ -34,7 +41,7 @@ export const Footer = () => {
         </div>
         <div className=" w-96 h-auto flex flex-col items-start ml-20 ">
           <div className="flex flex-col justify-center px-10 py-32">
-            <H4 className="text-white">Subscribe</H4>
+            <H5 className="text-white">Subscribe</H5>
             <InputField
               value=""
               name="name"
@@ -56,11 +63,20 @@ export const Footer = () => {
             />
           </div>
         </div>
-        <div className=" w-96 h-auto flex flex-col ml-20 bg-orange ">
-          <Logo url="/mvw.svg" />
-          <Paragraph>
-            Ye COl One hai ye COl One hai ye COl One hai ye COl One hai
-          </Paragraph>
+        <div className=" w-96 h-auto flex flex-col items-start ml-20 ">
+          <div className="flex flex-col justify-center px-10 py-24">
+            <H5 className="text-white text-left">Company</H5>
+            {footermenu.map((item) => {
+              return (
+                <H6
+                  key={item.id}
+                  className="cursor-pointer py-3 font-roboto text-left  text-white"
+                >
+                  {item.title}
+                </H6>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
