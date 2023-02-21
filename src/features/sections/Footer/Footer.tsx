@@ -1,14 +1,8 @@
 import { CustomButton } from "@/components/base/Button/Button";
 import { InputField } from "@/components/base/InputField/InputField";
-import {
-  H2,
-  H4,
-  H5,
-  H6,
-  Paragraph,
-} from "@/components/base/Typography/Typography";
+import { H5, H6 } from "@/components/base/Typography/Typography";
 import { Logo } from "@/components/general/Header/Logo";
-import { footermenu } from "@/consts/consts";
+import { footermenu, social } from "@/consts/consts";
 import React from "react";
 import { Icon } from "./Icons/Icon";
 
@@ -76,6 +70,20 @@ export const Footer = () => {
                 </H6>
               );
             })}
+            <div className="flex felx-row mt-10">
+              {social.map((item) => {
+                return (
+                  <Icon
+                    key={item.id}
+                    name={item.logo}
+                    tagLine={false}
+                    iconStyle={"mx-4 mr-3"}
+                    height={20}
+                    width={20}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

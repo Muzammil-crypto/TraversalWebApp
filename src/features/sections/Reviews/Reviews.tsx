@@ -1,7 +1,7 @@
 import { CustomImage } from "@/components/base/Image/CustomImage";
 import { H1, H6, Paragraph } from "@/components/base/Typography/Typography";
 import React, { useRef } from "react";
-// import { BackgroundImage } from "./Background";
+import { BackgroundImage } from "./Background";
 import { ReviewCard } from "./ReviewCard";
 import styles from "./styles.module.css";
 import { Navigation, Thumbs, Pagination } from "swiper";
@@ -17,9 +17,9 @@ export const Reviews = () => {
 
   return (
     <div className={styles.mainBox}>
-      {/* <BackgroundImage /> */}
-
       <div className={styles.feedBack}>
+        <BackgroundImage />
+
         <CustomImage
           url="/linew.svg"
           alt="line"

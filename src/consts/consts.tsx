@@ -132,3 +132,31 @@ export const footermenu = [
     link: "/",
   },
 ];
+
+export const social = [
+  {
+    id: 1,
+    title: "Facebook",
+    logo: "/si1.svg",
+  },
+  {
+    id: 2,
+    title: "Twitter",
+    logo: "/si2.svg",
+  },
+  {
+    id: 3,
+    title: "Instagram",
+    logo: "/si3.svg",
+  },
+  {
+    id: 4,
+    title: "Linkedin",
+    logo: "/si4.svg",
+  },
+  {
+    id: 5,
+    title: "Youtube",
+    logo: "/si5.svg",
+  },
+];
