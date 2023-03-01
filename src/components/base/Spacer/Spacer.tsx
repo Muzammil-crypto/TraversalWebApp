@@ -1,15 +1,20 @@
 import React from "react";
 import { CustomImage } from "../Image/CustomImage";
 
-export const Spacer = (props: { spacerStyles?: string }) => {
-  const { spacerStyles } = props;
+export const Spacer = (props: {
+  spacerStyles?: string;
+  img?: string;
+  width?: number;
+  height?: number;
+}) => {
+  const { spacerStyles, height, width, img } = props;
   return (
     <div>
       <CustomImage
-        url="/line.svg"
+        url={img ? img : "/line.svg"}
         alt="Group1"
-        height={20}
-        width={190}
+        height={height ? height : 20}
+        width={width ? width : 190}
         classStyles={spacerStyles}
       />
     </div>

@@ -13,7 +13,10 @@ import styles from "./styles.module.css";
 import { CustomImage } from "@/components/base/Image/CustomImage";
 import { BackgroundVectors } from "../Processes/BackgroundVectors";
 import { CustomButton } from "@/components/base/Button/Button";
+import useWindowSize from "../Processes/ProcessCard";
 export const Services = () => {
+  const size = useWindowSize();
+
   const swiperRef = useRef<any>(null);
   return (
     <div className={styles.mainBox}>
@@ -21,17 +24,19 @@ export const Services = () => {
 
       <div className={styles.childBox}>
         <H2 className={styles.heading}>{services}</H2>
-        <div className="flex flex-row">
-          <SlideLeft onTap={() => swiperRef?.current?.swiper?.slideNext()} />
+        <div className="flex flex-row  mt-48 absolute w-full">
+          <SlideLeft
+            classname="text-primary"
+            onTap={() => swiperRef?.current?.swiper?.slideNext()}
+          />
           <SlideRight
-            styles={{ marginLeft: 1000 }}
+            classname="ml-auto text-primary"
             onTap={() => swiperRef?.current?.swiper?.slidePrev()}
           />
         </div>
         <div className={styles.servicesContainer}>
           <Swiper
             className={styles.swiper}
-            pagination={true}
             autoplay={true}
             loop={true}
             grabCursor={true}
@@ -79,8 +84,8 @@ export const Services = () => {
           <CustomImage
             url="/fram.svg"
             alt="about"
-            height={442}
-            width={692}
+            height={size.width && size.width <= 600 ? 270 : 442}
+            width={size.width && size.width <= 600 ? 270 : 692}
             classStyles={styles.img}
           />
         </div>

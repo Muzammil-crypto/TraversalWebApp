@@ -8,12 +8,13 @@ export const SlideCard = (props: {
   title: string;
   description: string;
   image: string;
+  cardStyles?: string;
 }) => {
-  const { title, description, image } = props;
+  const { title, description, image, cardStyles } = props;
   return (
     <div
       style={{ width: 340, height: 414 }}
-      className="  h-2/3 w-1/4 bg-secondary rounded-2xl shadow-3xl justify-center items-center flex flex-col mt-14"
+      className={`  h-2/3 w-1/4 bg-secondary rounded-2xl shadow-3xl justify-center items-center flex flex-col mt-14 ${cardStyles}`}
     >
       <div>
         <Image

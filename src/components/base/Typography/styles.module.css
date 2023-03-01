@@ -1,0 +1,41 @@
+.h1{
+    @apply text-h1;
+}
+.h2{
+    @apply text-h2;
+}
+.h3{
+    @apply text-h3;
+}
+.h4{
+    @apply text-h4;
+}
+.h5{
+    @apply text-h5;
+}
+.h6{
+    @apply text-h6;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+   .h1{
+    @apply text-h1_mobile;
+   }
+    .h2{
+     @apply text-h2_mobile;
+    }
+    .h3{
+     @apply text-h3_mobile;
+    }
+    .h4{
+     @apply text-h4_mobile;
+    }
+    .h5{
+     @apply text-h5_mobile;
+    }
+    .h6{
+     @apply text-h6_mobile;
+    }
+    
+
+}

@@ -1,0 +1,76 @@
+.mainContainer{
+    @apply  w-screen h-[53px] mt-[180px] pl-[164px] flex flex-row items-center
+}
+.catItemContainer{
+ @apply flex hover:shadow-xl shadow-lg w-[75%] h-[118px] rounded-full ml-[5%] mt-[6%] 
+}
+.portfolioItemContainer{
+    @apply w-full h-full
+}
+.banner{
+   @apply h-[316px] bg-primary
+}
+.catItems{
+    @apply ml-[60px]
+}
+/* PortfolioItemCard */
+
+.mainCardContiner{
+    @apply w-full h-[450px] flex flex-row justify-center items-center mt-[45px]
+}
+.childContainer{
+    @apply w-1/2 h-full flex flex-col justify-center items-center
+}
+.workCardsContainer{
+    @apply w-1/2 h-full flex flex-col justify-center items-center 
+}
+.projectDetailsContainer{
+    @apply w-[90%] flex flex-col
+}
+.projectHeading{
+    @apply text-primary text-left my-5
+}
+.projectTypeContainer{
+@apply flex flex-row mt-[10px]
+}
+.industryStyles{
+    @apply font-bold mr-3
+}
+.spacer{
+    @apply w-full flex flex-col justify-center items-center
+}
+.categoryItems{
+    @apply flex flex-row items-center 
+}
+.catPara{
+    @apply cursor-pointer 
+}
+.cardContainer{
+   @apply  w-full h-full flex justify-center items-center mt-[45px]
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .cardContainer{
+        @apply  w-full h-full flex flex-col justify-center items-center mt-[45px]
+     }
+     .childContainer{
+        @apply w-[85%] h-full flex flex-col justify-center items-center
+    }
+    .workCardsContainer{
+        @apply w-[85%] h-full flex flex-col justify-center items-center 
+    }
+    .projectDetailsContainer{
+        @apply w-[90%] flex flex-col
+    }
+    .catItemContainer{
+        @apply grid grid-cols-2 hover:shadow-xl shadow-lg w-[90%] h-[250px] items-center justify-center rounded-sm ml-[5%] mt-[8%] pl-10
+       }
+       .catItems{
+        @apply ml-[20px] items-center
+    }
+    .banner{
+        @apply h-[500px] bg-primary
+     }
+    
+}

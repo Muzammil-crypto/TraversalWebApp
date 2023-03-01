@@ -1,8 +1,8 @@
 .mainHeroBox{
-    @apply h-full w-full overflow-scroll
+    @apply h-full w-full
 }
 .heroBody{
-  @apply w-full h-3/4 mt-10
+  @apply w-full h-3/4 mt-24
 }
 .rowBox{
     @apply flex flex-row h-full
@@ -11,7 +11,7 @@
     @apply w-3/6  justify-center flex flex-col pl-32 
 }
 .heading{
-    @apply text-left  
+    @apply text-left  mt-[29px]
 }
 .button{
     @apply bg-primary mt-7 hover:bg-primary
@@ -19,3 +19,40 @@
 .rightBox{
    @apply w-3/6 flex items-center justify-center 
 }
+.bullet{
+    @apply flex flex-row w-full items-center ml-[130px] mt-[30px]
+}
+.bulletHeading{
+    @apply ml-3
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    .mainHeroBox{
+        @apply h-full w-full
+    }
+    .heroBody{
+      @apply w-full h-3/4 mt-[40%]
+    }
+    .rowBox{
+        @apply flex flex-col
+    }
+    .leftBox{
+        @apply w-full  justify-center flex flex-col mt-10 p-4
+    }
+    .rightBox{
+        @apply w-full flex items-center justify-center mt-10 px-8 
+    }
+    .button{
+        @apply bg-primary mt-7 hover:bg-primary self-center ml-28
+    }
+    .heading{
+        @apply text-center  
+    }
+    .bullet{
+        @apply flex flex-row w-full items-center ml-2 mt-[30px] px-2
+    }
+    .bulletHeading{
+        @apply ml-3
+    }
+}
+

@@ -4,86 +4,82 @@ import { H5, H6 } from "@/components/base/Typography/Typography";
 import { Logo } from "@/components/general/Header/Logo";
 import { footermenu, social } from "@/consts/consts";
 import React from "react";
+import styles from "./styles.module.css";
 import { Icon } from "./Icons/Icon";
 
 export const Footer = () => {
   return (
-    <div className="w-full h-1/2 justify-center items-center mt-52 flex bg-orange ">
-      <div className="h-full w-full flex flex-row  bg-footer">
-        <div className=" w-96 h-auto flex flex-col ml-20 justify-center items-center m-5 ">
-          <Logo url="/mvw.svg" height={223} width={223} />
-          <div className="flex flex-col ">
-            <Icon
-              name="/fi1.svg"
-              tagLine={true}
-              sideText={"68 Aourangzaib Block New Garden Tow Lahore"}
-              iconStyle={"my-4 mr-3"}
-            />
-            <Icon
-              name="/fi2.svg"
-              tagLine={true}
-              sideText={"Support@megavers.com"}
-              iconStyle={"my-4 mr-3"}
-            />
-            <Icon
-              name="/fi3.svg"
-              tagLine={true}
-              sideText={"+92 324 7949512"}
-              iconStyle={"my-4 mr-3"}
-            />
-          </div>
+    <div className={styles.childFooterDiv}>
+      <div className={styles.logoContainer}>
+        <Logo url="/mvw.svg" height={223} width={223} />
+        <div className={styles.iconsContainer}>
+          <Icon
+            name="/fi1.svg"
+            tagLine={true}
+            sideText={"68 Aourangzaib Block New Garden Tow Lahore"}
+            iconStyle={styles.iconStylish}
+          />
+          <Icon
+            name="/fi2.svg"
+            tagLine={true}
+            sideText={"Support@megavers.com"}
+            iconStyle={styles.iconStylish}
+          />
+          <Icon
+            name="/fi3.svg"
+            tagLine={true}
+            sideText={"+92 324 7949512"}
+            iconStyle={styles.iconStylish}
+          />
         </div>
-        <div className=" w-96 h-auto flex flex-col items-start ml-20 ">
-          <div className="flex flex-col justify-center px-10 py-32">
-            <H5 className="text-white">Subscribe</H5>
-            <InputField
-              value=""
-              name="name"
-              placeholder="First Name"
-              type="text"
-              inputStyles=" px-2 h-12 mt-4 w-80 "
-            />
-            <InputField
-              value=""
-              name="email"
-              placeholder="Email"
-              type="text"
-              inputStyles="w-80 h-12 mt-4 px-2"
-            />
-            <CustomButton
-              varient="outlined"
-              child="Subcribe"
-              classStyles="mt-8 border-white text-white w-80 h-12 hover:bg-white hover:text-black"
-            />
-          </div>
+      </div>
+      <div className={styles.subscriptionContainer}>
+        <div className={styles.subScriptionChild}>
+          <H5 className="text-white">Subscribe</H5>
+          <InputField
+            value=""
+            name="name"
+            placeholder="First Name"
+            type="text"
+            inputStyles={styles.inputField}
+          />
+          <InputField
+            value=""
+            name="email"
+            placeholder="Email"
+            type="text"
+            inputStyles={styles.inputField}
+          />
+          <CustomButton
+            varient="outlined"
+            child="Subcribe"
+            classStyles={styles.button}
+          />
         </div>
-        <div className=" w-96 h-auto flex flex-col items-start ml-20 ">
-          <div className="flex flex-col justify-center px-10 py-24">
-            <H5 className="text-white text-left">Company</H5>
-            {footermenu.map((item) => {
+      </div>
+      <div className={styles.footerMenu}>
+        <div className={styles.footerMenuChild}>
+          <H5 className={styles.companyHeading}>Company</H5>
+          {footermenu.map((item) => {
+            return (
+              <H6 key={item.id} className={styles.menuLinks}>
+                {item.title}
+              </H6>
+            );
+          })}
+          <div className={styles.iconContainer}>
+            {social.map((item) => {
               return (
-                <H6
+                <Icon
                   key={item.id}
-                  className="cursor-pointer py-3 font-roboto text-left  text-white"
-                >
-                  {item.title}
-                </H6>
+                  name={item.logo}
+                  tagLine={false}
+                  iconStyle={styles.iconStyles}
+                  height={20}
+                  width={20}
+                />
               );
             })}
-            <div className="flex felx-row mt-10">
-              {social.map((item) => {
-                return (
-                  <Icon
-                    key={item.id}
-                    name={item.logo}
-                    tagLine={false}
-                    iconStyle={"mx-4 mr-3"}
-                    height={20}
-                    width={20}
-                  />
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>

@@ -1,14 +1,3 @@
-// import React from "react";
-// import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
-// export const SlideLeft = (props: { onTap: () => {} }) => {
-//   const { onTap } = props;
-//   return (
-//     <div className=" border-primary p-1 rounded-full border-2">
-//       <WestOutlinedIcon fontSize="medium" onClick={onTap} />
-//     </div>
-//   );
-// };
-
 import React from "react";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import { CSSProperties } from "styled-components";
@@ -21,7 +10,7 @@ export const SlideLeft = (props: {
   return (
     <div
       style={styles}
-      className={`border-primary p-1 rounded-full border-2 ${
+      className={`border-primary p-1  rounded-full border-2 ${
         classname && classname
       }`}
     >

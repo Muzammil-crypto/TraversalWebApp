@@ -1,0 +1,47 @@
+.mainBox{
+    @apply flex flex-row items-center justify-center hover:shadow-sm shadow-lg w-[65%] h-[142px] rounded-full ml-[45px] mt-[111px] bg-[#F8F8F8] 
+}
+.jobHeading{
+    @apply ml-[120px] mt-[100px] text-gray
+}
+.jobCards{
+    @apply  h-full grid grid-cols-2 items-center self-center justify-center mt-[69px] ml-[120px] 
+}
+.bannerBox{
+    @apply w-[100%] h-auto flex flex-col justify-center items-center 
+}
+.banner{
+    @apply rounded-xl py-44 
+}
+.jobCard{
+    @apply w-[90%] h-[95%] bg-card rounded-xl shadow-lg my-[20px] 
+}
+.categoryButton{
+    @apply w-[88%] ml-[30px] mt-[21px]
+}
+.applyButton{
+@apply bg-primary text-white hover:bg-primary hover:text-white px-[35px] mt-[20px] 
+}
+.catButtonBox{
+    @apply hover:shadow-lg flex flex-row items-center justify-center w-[15%] h-[44px] rounded-lg text-primary bg-dim cursor-pointer mx-[12px]
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    .mainBox{
+        @apply gap-2 flex flex-row items-center justify-center hover:shadow-sm shadow-lg w-[95%] h-[111px] rounded-full ml-[5px] mt-[111px] bg-[#F8F8F8] px-5
+    }
+    .jobCards{
+        @apply  h-full grid grid-cols-1 items-center self-center justify-center mt-[69px] ml-5
+    }
+
+    .catButtonBox{
+        @apply hover:shadow-lg flex flex-wrap items-center justify-center w-[28%] h-[44px] rounded-lg text-white bg-dim cursor-pointer mx-[3px]
+    }
+    .jobCard{
+        @apply w-full h-[95%] bg-card rounded-xl shadow-lg my-[20px]
+    }
+    .bannerBox{
+        @apply w-[100%] h-auto flex flex-col justify-center items-center mt-0
+    }
+}

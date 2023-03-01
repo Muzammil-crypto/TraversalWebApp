@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { CSSProperties } from "styled-components";
+import styles from "./styles.module.css";
 import {
   border,
   BorderProps,
@@ -14,6 +15,8 @@ import {
   typography,
   TypographyProps,
 } from "styled-system";
+import { SizeContext } from "@/contexts/sizeContext";
+import useWindowSize from "@/features/Sections/Processes/ProcessCard";
 
 interface CustomProps
   extends TypographyProps,
@@ -31,7 +34,6 @@ interface CustomProps
   onClick?: (e: any) => void;
   [key: string]: any;
 }
-
 const Typography: React.FC<CustomProps> = styled.div<CustomProps>`
   ${(props) =>
     props.ellipsis
@@ -53,7 +55,7 @@ const Typography: React.FC<CustomProps> = styled.div<CustomProps>`
 export const H1: React.FC<CustomProps> = (props) => (
   <Typography
     as="h1"
-    fontSize="48px"
+    fontSize={useWindowSize().width <= 600 ? "34px" : "48px"}
     fontWeight={700}
     lineHeight="56.25px"
     fontFamily={"sans-serif"}
@@ -63,7 +65,7 @@ export const H1: React.FC<CustomProps> = (props) => (
 export const H2: React.FC<CustomProps> = (props) => (
   <Typography
     as="h2"
-    fontSize="40px"
+    fontSize={useWindowSize().width <= 600 ? "28px" : "40px"}
     fontWeight={700}
     lineHeight="46.88px"
     fontFamily={"sans-serif"}
@@ -72,8 +74,9 @@ export const H2: React.FC<CustomProps> = (props) => (
 );
 export const H3: React.FC<CustomProps> = (props) => (
   <Typography
+    className={styles.h1}
     as="h3"
-    fontSize="35px"
+    fontSize={useWindowSize().width <= 600 ? "20px" : "35px"}
     fontWeight={700}
     lineHeight="41.02px"
     fontFamily={"sans-serif"}
@@ -83,7 +86,7 @@ export const H3: React.FC<CustomProps> = (props) => (
 export const H4: React.FC<CustomProps> = (props) => (
   <Typography
     as="h4"
-    fontSize="26px"
+    fontSize={useWindowSize().width <= 600 ? "18px" : "26px"}
     fontWeight={700}
     lineHeight="41.02px"
     fontFamily={"sans-serif"}
@@ -93,7 +96,7 @@ export const H4: React.FC<CustomProps> = (props) => (
 export const H5: React.FC<CustomProps> = (props) => (
   <Typography
     as="h5"
-    fontSize="26px"
+    fontSize={useWindowSize().width <= 600 ? "18px" : "26px"}
     fontWeight={400}
     lineHeight="35.52px"
     fontFamily={"sans-serif"}
@@ -103,7 +106,7 @@ export const H5: React.FC<CustomProps> = (props) => (
 export const H6: React.FC<CustomProps> = (props) => (
   <Typography
     as="h6"
-    fontSize="16px"
+    fontSize={useWindowSize().width <= 600 ? "14px" : "16px"}
     fontWeight={400}
     lineHeight="21.79px"
     fontFamily={"sans-serif"}

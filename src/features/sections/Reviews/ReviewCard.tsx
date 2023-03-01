@@ -4,7 +4,7 @@ import React from "react";
 import { ClientLogo } from "./ClientLogo";
 import styles from "./styles.module.css";
 
-export const ReviewCard = (props: { data: {} }) => {
+export const ReviewCard = (props: { data: any }) => {
   const { data } = props;
   const { name, image, review } = data;
   return (

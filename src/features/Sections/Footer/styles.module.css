@@ -1,0 +1,94 @@
+
+.childFooterDiv{
+  @apply  h-full w-full flex flex-row  bg-footer mt-52
+}
+.logoContainer{
+    @apply  w-[30%] h-auto flex flex-col ml-20 justify-center items-center m-5 
+}
+.iconsContainer{
+    @apply flex flex-col 
+}
+.iconStylish{
+    @apply my-4 mr-3
+}
+
+.subscriptionContainer{
+    @apply w-[30%]  h-auto flex flex-col items-start ml-20 
+}
+.subScriptionChild{
+    @apply flex flex-col justify-center px-10 py-32
+}
+.inputField{
+@apply  px-2 h-12 mt-4 w-80
+}
+.button{
+    @apply mt-8 border-white text-white w-80 h-12 hover:bg-white hover:text-black
+}
+
+.footerMenu{
+   @apply w-[30%]  h-auto flex flex-col items-start ml-20  
+}
+.footerMenuChild{
+    @apply flex flex-col justify-center px-10 py-24
+}
+.companyHeading{
+    @apply text-white text-left
+}
+.menuLinks{
+    @apply cursor-pointer py-3 text-left  text-white
+}
+.iconContainer{
+    @apply flex flex-row mt-10
+}
+.iconStyles{
+@apply mx-4 mr-3
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .childFooterDiv{
+        @apply  h-full w-full flex flex-col  bg-footer mt-60 justify-center items-center 
+      }
+      .logoContainer{
+          @apply  w-96 h-auto flex flex-col  justify-center items-center m-5 
+      }
+      .iconsContainer{
+          @apply flex flex-col 
+      }
+      .iconStylish{
+          @apply my-4 mr-3
+      }
+      
+      .subscriptionContainer{
+          @apply w-full h-full flex flex-col items-center ml-1
+      }
+      .subScriptionChild{
+          @apply flex flex-col justify-center items-center px-10 py-10
+      }
+      .inputField{
+      @apply  px-2 h-12 mt-4 w-80
+      }
+      .button{
+          @apply mt-8 border-white text-white w-80 h-12 hover:bg-white hover:text-black
+      }
+      
+      .footerMenu{
+         @apply w-96 h-auto flex flex-col items-start ml-1 
+      }
+      .footerMenuChild{
+          @apply flex flex-col justify-center px-10 py-10
+      }
+      .companyHeading{
+          @apply text-white text-left
+      }
+      .menuLinks{
+          @apply cursor-pointer py-3 text-left  text-white
+      }
+      .iconContainer{
+          @apply flex flex-row mt-10
+      }
+      .iconStyles{
+      @apply mx-4 mr-3
+      }
+    
+}

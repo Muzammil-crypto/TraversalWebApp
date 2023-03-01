@@ -1,0 +1,72 @@
+.mainBox{
+    @apply  h-full w-full
+}
+.heading{
+    @apply text-center mt-[10%]
+}
+.supportCardBox{
+@apply h-[255px] w-full flex flex-row items-center justify-center mt-[175px] 
+}
+.comSupportCard{
+    @apply flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-3xl justify-center mx-[21px] items-center h-[253px] w-[433px] my-4
+}
+.comImageBox{
+    @apply w-[293px] flex flex-col justify-center items-center
+}
+/* form */
+
+.formContainer{
+    @apply flex flex-col w-screen h-auto justify-center items-center mt-24
+}
+.gridWrapper{
+@apply  grid grid-cols-2 items-center self-center justify-center  w-[900px]  ml-36
+}
+.fieldStyleOne{
+    @apply py-3 pl-2 w-[80%]
+}
+.fieldStyleTwo{
+    @apply py-3 pl-2 w-[820px] h-[160px] 
+}
+.buttonContainer{
+@apply w-[750px]
+}
+.button{
+    @apply bg-primary mr-auto px-28 rounded-lg mt-5 py-3 text-white hover:bg-white hover:text-primary
+}
+.dropDown{
+    @apply w-[80%]
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    .heading{
+        @apply text-center mt-[60%] text-h2_mobile
+    }
+.gridWrapper{
+@apply  grid grid-cols-1 items-center self-center justify-center  w-full 
+}
+.fieldStyleOne{
+    @apply py-3 pl-2 w-[70%]
+}
+.fieldStyleTwo{
+    @apply py-3 pl-2 w-[70%] h-[160px] 
+}
+.buttonContainer{
+@apply w-[65%]
+}
+.button{
+    @apply bg-primary mr-auto px-10 rounded-lg mt-5 py-3 text-white hover:bg-white hover:text-primary
+}
+.supportCardBox{
+    @apply h-full w-full flex flex-col items-center justify-center mt-[175px]
+    }
+    .comSupportCard{
+        @apply flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-3xl justify-center mx-[21px] items-center h-[200px] w-[390px] my-4
+    }
+    .comImageBox{
+        @apply w-[250px] flex flex-col justify-center items-center
+    }
+    .dropDown{  
+        @apply w-[70%]
+    }
+}

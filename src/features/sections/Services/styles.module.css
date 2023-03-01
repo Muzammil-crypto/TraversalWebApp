@@ -32,3 +32,26 @@
 .button{
   @apply bg-primary hover:bg-primary mt-5 rounded-md px-6
 }
+
+@media (max-width: 768px) {
+  .about{
+    @apply w-full flex flex-col mt-32
+}
+.imageBox{
+  @apply w-full flex items-center justify-center p-12
+}
+.infoBox{
+  @apply w-full flex justify-center flex-col  -ml-14
+}
+.info{
+    @apply text-left w-screen p-4 
+}
+.servicesContainer{
+  @apply m-auto overflow-hidden w-5/6 
+}
+.swiper{
+  @apply overflow-hidden mt-12 w-full
+}
+
+
+} 

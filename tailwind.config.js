@@ -14,6 +14,10 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
+      'dim': '#E1ECD8',
+      
+      'card': '#F8F8F8',
+      'header': '#77BB3F',
       'footer': '#292929',
       'background': '#F5F5F5',
       'fontColor': '#292929',
@@ -35,6 +39,19 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     fontSize: {
+      h1: '3.052rem',
+      h2: '40px',
+      h3: '35px',
+      h4: '26px',
+      h5: '26px',
+      h6: '16px',
+      h1_mobile: '1.25rem',
+      h2_mobile: '28px',
+      h3_mobile: '24px',
+      h4_mobile: '20px',
+      h5_mobile: '18px',
+      h6_mobile: '16px',
+
       sm: '0.8rem',
       base: '1rem',
       xl: '1.25rem',

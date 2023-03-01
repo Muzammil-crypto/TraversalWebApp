@@ -1,8 +1,6 @@
 import { CustomImage } from "@/components/base/Image/CustomImage";
 import { H1, H6, Paragraph } from "@/components/base/Typography/Typography";
 import React, { useRef } from "react";
-import { BackgroundImage } from "./Background";
-import { ReviewCard } from "./ReviewCard";
 import styles from "./styles.module.css";
 import { Navigation, Thumbs, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +10,8 @@ import "swiper/css/pagination";
 import { SlideLeft } from "@/components/general/Slider/SliderLeft";
 import { SlideRight } from "@/components/general/Slider/SlideRight";
 import { reviews } from "@/consts/consts";
+import { BackgroundImage } from "./Background";
+import { ReviewCard } from "./ReviewCard";
 export const Reviews = () => {
   const swiperRef = useRef<any>(null);
 
@@ -45,8 +45,8 @@ export const Reviews = () => {
       </Paragraph>
       <div className={styles.servicesContainer}>
         <Swiper
+          style={{ width: "100%" }}
           className={styles.swiper}
-          pagination={true}
           autoplay={true}
           loop={true}
           grabCursor={true}

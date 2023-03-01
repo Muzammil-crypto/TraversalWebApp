@@ -52,14 +52,6 @@ export const Ourservices = [
     image: "/mobile.svg",
     link: "/services/web-development",
   },
-  {
-    id: 7,
-    title: "Web Development",
-    description:
-      "We provide robust web development solutions according to need of our clients.",
-    image: "/mobile.svg",
-    link: "/services/web-development",
-  },
 ];
 
 export const procs = [
@@ -158,5 +150,143 @@ export const social = [
     id: 5,
     title: "Youtube",
     logo: "/si5.svg",
+  },
+];
+
+export const Teams = [
+  {
+    id: 1,
+    name: "John Doe",
+    image: "/img1.svg",
+    designation: "CEO",
+  },
+  {
+    id: 2,
+    name: "Jehbu Kos",
+    image: "/img2.svg",
+    designation: "CEO",
+  },
+  {
+    id: 3,
+    name: "John Doe",
+    image: "/img3.svg",
+    designation: "CEO",
+  },
+  {
+    id: 4,
+    name: "Jehbu Kos",
+    image: "/img1.svg",
+    designation: "CEO",
+  },
+];
+
+export const portfolio = [
+  {
+    id: 1,
+    title: "Fleet Tracking Application",
+    image: "/p1.svg",
+    industry: "Logistics",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row-reverse",
+  },
+  {
+    id: 2,
+    title: "Event Operations Management",
+    image: "/p3.svg",
+    industry: "Industry",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row",
+  },
+  {
+    id: 3,
+    title: "Fleet Tracking Application",
+    image: "/p4.svg",
+    industry: "Logistics",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row-reverse",
+  },
+  {
+    id: 4,
+    title: "Event Operations Management",
+    image: "/p5.svg",
+    industry: "Industry",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row",
+  },
+  {
+    id: 3,
+    title: "Fleet Tracking Application",
+    image: "/p6.svg",
+    industry: "Logistics",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row-reverse",
+  },
+  {
+    id: 4,
+    title: "Event Operations Management",
+    image: "/p7.svg",
+    industry: "Industry",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets.",
+    cardStyle: "flex-row",
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    title: "All",
+  },
+  {
+    id: 2,
+    title: "Health Care",
+  },
+  {
+    id: 3,
+    title: "Grocery",
+  },
+  {
+    id: 4,
+    title: "E-Commerce",
+  },
+  {
+    id: 5,
+    title: "Traveling",
+  },
+  {
+    id: 6,
+    title: "Car Booking",
+  },
+  {
+    id: 7,
+    title: "Medical",
+  },
+  {
+    id: 8,
+    title: "Electrical",
+  },
+];
+
+export const careerCategories = [
+  {
+    id: 1,
+    title: "Sales",
+  },
+  {
+    id: 2,
+    title: "Marketing",
+  },
+  {
+    id: 3,
+    title: "Designing",
+  },
+  {
+    id: 4,
+    title: "Development",
   },
 ];

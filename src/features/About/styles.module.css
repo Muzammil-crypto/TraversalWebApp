@@ -1,0 +1,114 @@
+.mainBox{
+    @apply h-screen w-screen flex flex-col items-center
+}
+.servicesContainer{
+    @apply  overflow-hidden w-5/6 flex items-center justify-center ml-36
+  }
+  .swiper{
+    @apply overflow-hidden mt-12 w-full flex justify-center items-center
+  }
+  .mainDiv{
+    @apply w-full h-[182px] bg-primary mt-80 flex items-center justify-center flex-col opacity-95
+  }
+  .headingFont{
+    @apply text-white
+  }
+  .button{
+    @apply bg-white text-primary mt-8 py-3 hover:bg-primary hover:text-white
+  }
+.teamsBox{
+  @apply w-[680px] ml-[163px] mt-[77px]
+}
+.teamHeading{
+  @apply mb-[23px]
+}
+.swiperButtons{
+  @apply flex flex-row w-full items-center justify-center mt-48 absolute 
+}
+.teamCard{
+  @apply w-[320px] h-[500px]
+}
+.designationBox{
+  @apply w-[320px] h-[100px] flex flex-col justify-center items-center
+}
+.banners{
+  @apply w-full py-5 bg-primary  flex items-center justify-center flex-col opacity-95
+}
+.bannerHeading{
+  @apply text-white mb-5 
+}
+.bannerDescription{
+  @apply text-white 
+}
+.bannerButton{
+  @apply bg-white text-primary mt-[2vh] py-[1.8vh] hover:bg-primary px-24 hover:text-white
+}
+.swiperleftButton{
+  @apply text-primary
+}
+.swiperRightButton{
+  @apply text-primary ml-[1300px]
+}
+.logoContainer{
+  @apply w-auto h-auto
+}
+/* Mobile */
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+
+
+.servicesContainer{
+    @apply  overflow-hidden w-full flex items-center justify-center ml-10
+  }
+  .swiper{
+    @apply overflow-hidden mt-12 w-full flex justify-center items-center
+  }
+  .mainDiv{
+    @apply w-full h-[182px] bg-primary mt-80 flex items-center justify-center flex-col opacity-95
+  }
+  .headingFont{
+    @apply text-white
+  }
+  .button{
+    @apply bg-white text-primary mt-8 py-3 hover:bg-primary hover:text-white
+  }
+.teamsBox{
+  @apply w-[680px] mt-[77px] ml-10
+}
+.teamHeading{
+  @apply mb-[23px]
+}
+.swiperButtons{
+  @apply flex flex-row w-full items-center justify-center mt-48 absolute 
+}
+.teamCard{
+  @apply w-[320px] h-[500px]
+}
+.designationBox{
+  @apply w-[320px] h-[100px] flex flex-col justify-center items-center
+}
+.banner{
+  @apply w-full h-[182px] bg-primary mt-20 flex items-center justify-center flex-col opacity-95
+}
+
+
+.swiperleftButton{
+  @apply text-primary
+}
+.swiperRightButton{
+  @apply text-primary ml-[280px]  relative z-10
+}
+.logoContainer{
+  @apply w-[230px] h-[270px] ml-5
+}
+.bannerButton{
+  @apply bg-white text-primary mt-[2vh] py-[1.8vh] hover:bg-primary px-2 hover:text-white 
+}
+.bannerHeading{
+  @apply text-white mb-3 ml-[25%]
+}
+.bannerDescription{
+  @apply text-white
+}
+
+
+}

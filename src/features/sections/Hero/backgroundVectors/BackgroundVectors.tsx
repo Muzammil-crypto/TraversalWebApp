@@ -14,7 +14,6 @@ export const BackgroundVectors = () => {
           position: "absolute",
           content: "",
           zIndex: -1,
-          marginLeft: " 30%",
         }}
       />
       <Image
@@ -28,8 +27,8 @@ export const BackgroundVectors = () => {
           zIndex: -1,
           marginTop: "12%",
           maxHeight: 480,
-          maxWidth: 480,
-          left: "-13%",
+          // maxWidth: 480,
+          marginLeft: "-13%",
         }}
       />
       <Image
@@ -128,11 +127,13 @@ export const BackgroundVectors = () => {
         height={182}
         width={189}
         style={{
+          right: 0,
           position: "absolute",
-          content: "",
+          overflow: "hidden",
+          // content: "",
           zIndex: -1,
           marginTop: "46%",
-          marginLeft: "89%",
+          // marginLeft: "89%",
         }}
       />
     </>

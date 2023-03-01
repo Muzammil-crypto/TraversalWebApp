@@ -17,7 +17,7 @@
     @apply flex flex-row 
 }
 .headingContainer{
- @apply  mr-36 mt-7
+ @apply   mt-7 pl-[9%]
 
 }
 .img{
@@ -27,5 +27,24 @@
     @apply flex h-128  w-screen justify-center ml-36 
 }
 .parentBox{
-   @apply w-screen
+   @apply w-full
+}
+.cardAndArrow{
+   @apply flex flex-row
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    .mainBox{
+        @apply h-full w-full flex items-center justify-center flex-col mt-60 
+    }
+    .mapContainer{
+        @apply flex flex-col w-full mt-[50px] h-full
+    }
+    .parentBox{
+        @apply w-[250px] -mt-14 flex flex-col justify-center items-center
+     }
+     .cardAndArrow{
+        @apply flex flex-col
+     }
+    
 }
