@@ -1,6 +1,5 @@
 import { Spacer } from "@/components/base/Spacer/Spacer";
 import { H2 } from "@/components/base/Typography/Typography";
-import { categories, portfolio } from "@/consts/consts";
 import React from "react";
 import styles from "./styles.module.css";
 import { Banner } from "../About/components/Banner";
@@ -8,8 +7,120 @@ import { Hero } from "../Sections/Hero/Hero";
 import { BackgroundImages } from "./BackgroundImages";
 import { CategoryItems } from "./components/CategoryItems";
 import { PortfolioItemsCard } from "./PortfolioItemsCard/PortfolioItemsCard";
+//
+
+interface Item {
+  id: number;
+  name: string;
+  category: string;
+  description: string;
+  industry: string;
+  image: string;
+}
+
+const items: Item[] = [
+  {
+    id: 1,
+    industry: "Logistics",
+    image: "/p1.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Education",
+  },
+  {
+    id: 2,
+    industry: "Logistics",
+    image: "/p3.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Health Care",
+  },
+  {
+    id: 3,
+    industry: "Logistics",
+    image: "/p4.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Groccery",
+  },
+  {
+    id: 4,
+    industry: "Logistics",
+    image: "/p5.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "E-Commerce",
+  },
+  {
+    id: 5,
+    industry: "Logistics",
+    image: "/p6.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Traveling",
+  },
+  {
+    id: 6,
+    industry: "Logistics",
+    image: "/p7.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Education",
+  },
+  {
+    id: 7,
+    industry: "Logistics",
+    image: "/p1.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Finance",
+  },
+  {
+    id: 8,
+    industry: "Logistics",
+    image: "/p3.svg",
+
+    name: "Fleet Tracking Application",
+    description:
+      "Megaverse developed a fleet tracking platform to maximize efficiency by providing real-time logistics activity and communications to service providers responsible for managing large fleets",
+    category: "Media",
+  },
+];
+const CATEGORIES: string[] = [
+  "Health Care",
+  "Groccery",
+  "E-Commerce",
+  "Education",
+  "Traveling",
+  "Media",
+  "Finance",
+];
 
 export const Portfolio = () => {
+  const [filteredItems, setFilteredItems] = React.useState<Item[]>([]);
+  const [all, setAll] = React.useState<boolean>(true);
+  const handleFilter = (category: string) => {
+    const filtered = items.filter((item) => item.category === category);
+    setFilteredItems(filtered);
+  };
+  const showCategories = (item: string) => {
+    setAll(false);
+    handleFilter(item);
+  };
   return (
     <div>
       <Hero
@@ -23,27 +134,44 @@ export const Portfolio = () => {
         <Spacer img="/linep.svg" width={1050} spacerStyles="ml-10" />
       </div>
       <div className={styles.catItemContainer}>
-        {categories.map((item) => (
+        {CATEGORIES.map((item, index) => (
           <CategoryItems
-            key={item.id}
-            item={item.title}
+            key={index}
+            item={item}
             itemStyles={styles.catItems}
+            onClick={() => showCategories(item)}
           />
         ))}
       </div>
 
       <div className={styles.portfolioItemContainer}>
         <BackgroundImages />
-        {portfolio.map((item) => (
-          <PortfolioItemsCard
-            key={item.id}
-            projectName={item.title}
-            description={item.description}
-            image={item.image}
-            category={item.industry}
-            cardStyles={`${item.cardStyle}`}
-          />
-        ))}
+        {all
+          ? items.map((item, ind) => (
+              <PortfolioItemsCard
+                key={ind}
+                projectName={item.name}
+                description={item.description}
+                image={item.image}
+                category={item.industry}
+                cardStyles={`${
+                  ind % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
+              />
+            ))
+          : filteredItems.map((item, ind) => (
+              <PortfolioItemsCard
+                key={item.id}
+                projectName={item.name}
+                description={item.description}
+                image={item.image}
+                category={item.industry}
+                cardStyles={`${
+                  ind % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
+              />
+            ))}
+
         <Banner
           bannerStyles={styles.banners}
           heading="Need help with your next project? "

@@ -6,13 +6,14 @@ import styles from "./../styles.module.css";
 export const JobCards = (props: {
   title?: string;
   description?: string;
+  category?: string;
   cardStyles?: string;
 }) => {
-  const { title, description, cardStyles } = props;
+  const { title, description, cardStyles, category } = props;
   return (
     <div className={`${styles.jobCard} ${cardStyles}`}>
       <div className={styles.categoryButton}>
-        <CategoryButtons category={"Sales"} buttonStyles="ml-0 my-[8px]" />
+        <CategoryButtons category={category} buttonStyles={`ml-0 my-[8px]`} />
         <H4>{title ? title : "Business Marketing Sales"}</H4>
         <Paragraph>
           {description

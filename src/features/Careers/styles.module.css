@@ -5,7 +5,7 @@
     @apply ml-[120px] mt-[100px] text-gray
 }
 .jobCards{
-    @apply  h-full grid grid-cols-2 items-center self-center justify-center mt-[69px] ml-[120px] 
+    @apply  h-full grid grid-cols-2 items-center self-center justify-center mt-[69px] ml-[120px] gap-3
 }
 .bannerBox{
     @apply w-[100%] h-auto flex flex-col justify-center items-center 
@@ -32,7 +32,7 @@
         @apply gap-2 flex flex-row items-center justify-center hover:shadow-sm shadow-lg w-[95%] h-[111px] rounded-full ml-[5px] mt-[111px] bg-[#F8F8F8] px-5
     }
     .jobCards{
-        @apply  h-full grid grid-cols-1 items-center self-center justify-center mt-[69px] ml-5
+        @apply  h-full grid grid-cols-1 items-center self-center justify-center mt-[69px] m-1 gap-1
     }
 
     .catButtonBox{

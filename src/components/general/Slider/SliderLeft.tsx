@@ -9,12 +9,13 @@ export const SlideLeft = (props: {
   const { onTap, classname, styles } = props;
   return (
     <div
+      onClick={onTap}
       style={styles}
       className={`border-primary p-1  rounded-full border-2 ${
         classname && classname
       }`}
     >
-      <WestOutlinedIcon fontSize="medium" onClick={onTap} />
+      <WestOutlinedIcon fontSize="medium" />
     </div>
   );
 };

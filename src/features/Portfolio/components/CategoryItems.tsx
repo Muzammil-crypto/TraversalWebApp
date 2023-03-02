@@ -6,16 +6,19 @@ import styles from "./../styles.module.css";
 export const CategoryItems = (props: {
   item?: string;
   itemStyles?: string;
+  onClick?: () => void;
 }) => {
   const [isClicked, setIsClicked] = React.useState(false);
 
-  const { item, itemStyles } = props;
+  const { item, itemStyles, onClick } = props;
 
   return (
     <div className={` ${styles.categoryItems} ${itemStyles}`}>
       <Paragraph>
         <div className={styles.catPara}>
-          <span className="text-gray">{item}</span>
+          <span onClick={onClick} className="text-gray">
+            {item}
+          </span>
 
           {isClicked ? <Spacer width={30} /> : ""}
         </div>

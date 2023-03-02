@@ -22,6 +22,7 @@ export const Footer = () => {
           <Icon
             name="/fi2.svg"
             tagLine={true}
+            email={true}
             sideText={"Support@megavers.com"}
             iconStyle={styles.iconStylish}
           />

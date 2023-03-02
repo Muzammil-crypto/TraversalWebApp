@@ -9,7 +9,7 @@
 }
 
 .lowerBox{
-    @apply  bg-white  rounded-lg p-[2%] right-[8%] absolute w-[30%] h-[60%]
+    @apply  bg-white  rounded-lg p-[2%] right-[8%] absolute w-[30%] h-[75%]
 }
 .textDiv{
     @apply left-[8%] w-[40%] absolute
@@ -22,18 +22,18 @@
 }
 
 .nameField{
-@apply py-3 mt-2  mb-3 px-2 w-full
+@apply py-3 mt-2  mb-3 px-2 w-full h-[6vh]
 }
 .emailField{
-    @apply py-2 mt-3  mb-3 px-2 w-full
+    @apply py-2 mt-3  mb-3 px-2 w-full h-[6vh]
 
 }
 .phoneField{
-    @apply py-2 mt-2  mb-3 px-2 w-full
+    @apply py-2 mt-2  mb-3 px-2 w-full h-[6vh]
 
 }
 .messageField{
-    @apply py-12 mt-3  mb-3 px-2 w-full
+    @apply py-12 mt-3  mb-3 px-2 w-full h-[6vh]
 
 }
 .checkboxField{
@@ -44,6 +44,26 @@
     @apply w-6 h-8 mr-5 left-0 
 }
 
+@media only screen and (max-width: 2000px) and (min-width: 1500px)  {
+    .lowerBox{
+        @apply  bg-white  rounded-lg p-[2%] right-[8%] absolute w-[35%] h-[60%]
+    }
+    .nameField{
+        @apply py-3 mt-2  mb-3 px-2 w-full h-[6vh]
+        }
+        .emailField{
+            @apply py-2 mt-3  mb-3 px-2 w-full h-[6vh]
+        
+        }
+        .phoneField{
+            @apply py-2 mt-2  mb-3 px-2 w-full h-[6vh]
+        
+        }
+        .messageField{
+            @apply py-12 mt-3  mb-3 px-2 w-full h-[6vh]
+        
+        }
+}
 
 
 @media only screen and (max-width: 600px) and (min-width: 300px)  {
@@ -59,7 +79,7 @@
     }
     
     .lowerBox{
-        @apply  bg-white rounded-lg p-[4%]  absolute right-[7%] mt-[50%]
+        @apply  bg-white rounded-lg p-[4%]  absolute left-[6%] mt-[60%] w-[85%] h-[60%]
     }
     .textDiv{
         @apply  w-full absolute left-0 mt-[16%]
@@ -79,7 +99,7 @@
     
     }
     .phoneField{
-        @apply py-2 mt-2  mb-3 px-2 w-80
+        @apply py-2 mt-2  mb-3 px-2 w-full
     
     }
     .messageField{
@@ -87,12 +107,20 @@
     
     }
     .checkboxField{
-        @apply flex justify-center items-center flex-row w-[300px] 
+        @apply flex justify-center items-center flex-row w-full
     
     }
     .checkBoxStyles{
         @apply w-6 h-8 mr-5 left-0 
     }
-    
+    .swiperButtonsContainer{
+        @apply flex flex-row  mt-48 absolute w-full px-10
+    }
+    .leftButton{
+        @apply text-primary
+    }
+    .rightButton{
+        @apply ml-auto text-primary 
+    }
     
 } 

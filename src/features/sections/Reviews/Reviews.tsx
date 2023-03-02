@@ -10,16 +10,21 @@ import "swiper/css/pagination";
 import { SlideLeft } from "@/components/general/Slider/SliderLeft";
 import { SlideRight } from "@/components/general/Slider/SlideRight";
 import { reviews } from "@/consts/consts";
-import { BackgroundImage } from "./Background";
 import { ReviewCard } from "./ReviewCard";
 export const Reviews = () => {
   const swiperRef = useRef<any>(null);
 
   return (
-    <div className={styles.mainBox}>
+    <div
+      style={{
+        backgroundImage: `url("/proty.svg")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundBlendMode: "overlay",
+      }}
+      className={styles.mainBox}
+    >
       <div className={styles.feedBack}>
-        <BackgroundImage />
-
         <CustomImage
           url="/linew.svg"
           alt="line"

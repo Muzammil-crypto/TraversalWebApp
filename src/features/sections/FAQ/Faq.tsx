@@ -3,8 +3,10 @@ import { InputField } from "@/components/base/InputField/InputField";
 import { Spacer } from "@/components/base/Spacer/Spacer";
 import { H1, H2, H3, Paragraph } from "@/components/base/Typography/Typography";
 import React from "react";
+import useWindowSize from "../Processes/ProcessCard";
 import styles from "./styles.module.css";
 export const Faq = () => {
+  const size = useWindowSize();
   return (
     <div className={styles.mainBody}>
       <H2>Send any Query</H2>
@@ -13,7 +15,13 @@ export const Faq = () => {
         style={{
           backgroundImage: `url("/bottomrect.svg")`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover  ",
+          backgroundSize: `${
+            size.width && size.width > 1500
+              ? "contain"
+              : size.width <= 600
+              ? "cover"
+              : "100% 100%"
+          }`,
         }}
         className={styles.childBody}
       >

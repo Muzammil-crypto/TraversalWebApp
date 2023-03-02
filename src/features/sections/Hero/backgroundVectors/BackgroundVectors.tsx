@@ -1,34 +1,36 @@
 import Image from "next/image";
 import React from "react";
 import { marginLeft } from "styled-system";
+import useWindowSize from "../../Processes/ProcessCard";
 
 export const BackgroundVectors = () => {
+  const size = useWindowSize();
   return (
     <>
       <Image
         alt="hero"
         src="/topEllipse.svg"
-        height={308}
-        width={308}
+        height={size.width && size.width <= 600 ? 200 : 308}
+        width={size.width && size.width <= 600 ? 200 : 308}
         style={{
           position: "absolute",
           content: "",
           zIndex: -1,
+          left: "20%",
         }}
       />
       <Image
         alt="hero"
         src="/leftEllipse.svg"
-        height={480}
-        width={480}
+        height={size.width && size.width <= 600 ? 240 : 480}
+        width={size.width && size.width <= 600 ? 240 : 480}
         style={{
           position: "absolute",
           content: "",
           zIndex: -1,
           marginTop: "12%",
           maxHeight: 480,
-          // maxWidth: 480,
-          marginLeft: "-13%",
+          left: "-10%",
         }}
       />
       <Image
@@ -124,8 +126,8 @@ export const BackgroundVectors = () => {
       <Image
         alt="hero"
         src="/imgBottom.svg"
-        height={182}
-        width={189}
+        height={size.width && size.width <= 600 ? 100 : 182}
+        width={size.width && size.width <= 600 ? 100 : 189}
         style={{
           right: 0,
           position: "absolute",

@@ -14,6 +14,7 @@ import { CustomImage } from "@/components/base/Image/CustomImage";
 import { BackgroundVectors } from "../Processes/BackgroundVectors";
 import { CustomButton } from "@/components/base/Button/Button";
 import useWindowSize from "../Processes/ProcessCard";
+import { Spacer } from "@/components/base/Spacer/Spacer";
 export const Services = () => {
   const size = useWindowSize();
 
@@ -24,50 +25,51 @@ export const Services = () => {
 
       <div className={styles.childBox}>
         <H2 className={styles.heading}>{services}</H2>
-        <div className="flex flex-row  mt-48 absolute w-full">
+        <Spacer spacerStyles="ml-12" />
+        <div className={styles.swiperButtonsContainer}>
           <SlideLeft
-            classname="text-primary"
-            onTap={() => swiperRef?.current?.swiper?.slideNext()}
+            classname={styles.leftButton}
+            onTap={() => swiperRef?.current?.swiper?.slidePrev()}
           />
           <SlideRight
-            classname="ml-auto text-primary"
-            onTap={() => swiperRef?.current?.swiper?.slidePrev()}
+            classname={styles.rightButton}
+            onTap={() => swiperRef?.current?.swiper?.slideNext()}
           />
         </div>
         <div className={styles.servicesContainer}>
           <Swiper
-            className={styles.swiper}
-            autoplay={true}
-            loop={true}
-            grabCursor={true}
-            modules={[Navigation, Thumbs, Pagination]}
-            spaceBetween={39}
+            // install Swiper modules
+            modules={[Navigation, Pagination]}
+            // loop={true}
+            spaceBetween={105}
+            slidesPerView={1}
+            // navigation
+            // pagination={{ clickable: true }}
+            // scrollbar={{ draggable: true }}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
             ref={swiperRef}
             breakpoints={{
-              1410: {
-                width: 1220,
+              640: {
+                slidesPerView: 1,
+                width: 1440,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1024: {
                 slidesPerView: 3,
               },
-              1160: {
-                width: 1100,
+              1440: {
                 slidesPerView: 3,
               },
-              900: {
-                width: 900,
-                slidesPerView: 3,
-              },
-              800: {
-                width: 820,
-                slidesPerView: 2,
-              },
-              700: {
-                width: 768,
-                slidesPerView: 2,
+              1800: {
+                slidesPerView: 4.2,
               },
             }}
           >
-            {Ourservices.map((item, val) => (
-              <SwiperSlide key={val}>
+            {Ourservices.map((item, index) => (
+              <SwiperSlide key={index}>
                 <SlideCard
                   key={item.id}
                   title={item.title}

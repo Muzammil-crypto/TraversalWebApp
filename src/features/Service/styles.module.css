@@ -14,13 +14,13 @@
     @apply text-white bg-primary ml-5 px-10 hover:bg-white hover:text-primary hover:border-primary
 }
 .styledImageContainer{
-    @apply  h-[1460px] mt-[164px] flex flex-row items-center w-full
+    @apply  mt-[164px] flex flex-row items-center w-full h-[100vh]
 }
 .childImageContainer{
-    @apply w-[604px] h-full flex flex-col 
+    @apply w-[50%] h-full flex flex-col mt-[20%]
 }
 .leftBlock{
-    @apply w-auto h-auto flex flex-col ml-10 mt-[40%]
+    @apply w-auto h-auto flex flex-col ml-10 
 }
 .leftHeading{
     @apply text-white mb-[26px]
@@ -35,7 +35,7 @@
     @apply bg-white text-primary mt-[42px] rounded-lg py-3 px-10 hover:bg-primary hover:text-white 
 }
 .rightGridStyles{
-    @apply w-full -mt-[10%] grid grid-cols-2 pl-[8%] pt-[10px] gap-10
+    @apply w-full -mt-[10%] grid grid-cols-2 pl-[8%] pt-[10px] gap-2
 }
 /* cards */
 
@@ -52,7 +52,7 @@
     @apply text-white
 }
 
-@media only screen and (max-width: 600px) and (min-width: 300px)  {
+@media only screen and (max-width: 767px) and (min-width: 300px)  {
     .styledImageContainer{
         @apply w-full h-[1460px] mt-[1px] flex flex-col items-center
     }
@@ -60,16 +60,54 @@
         @apply  grid grid-cols-1 h-[60%] w-auto
     }
     .rightGridStyles{
-        @apply w-auto  grid grid-cols-1 pl-[0px] mt-[80px] h-auto
+        @apply w-auto  grid grid-cols-1 pl-[0px] mt-[0%] h-auto
     }
     .leftBlock{
-        @apply w-[600px] h-auto flex flex-col ml-2 mt-[52px] justify-center items-center
+        @apply w-auto h-auto flex flex-col ml-2 mt-[5px] justify-center items-center 
     }
     .leftHeading{
-        @apply text-white mb-[26px] w-[300px]
+        @apply text-white mb-[26px] w-[60%]
     }
     .leftPara{
-        @apply text-white w-[300px]
+        @apply text-white w-[58%]
+    }
+    .leftButtons{
+        @apply w-[182] px-0 mx-0
+    }
+    .qualityCard{
+    @apply flex flex-col w-[310px] rounded-lg bg-primary h-[180px] justify-center items-center my-[1px]  px-10
+}
+.qualitychildCard{
+    @apply w-[285px] h-full flex flex-col items-center mt-[10px]
+}
+.heading{
+    @apply font-bold text-white mb-4
+}
+.cardPara{
+    @apply text-white
+}
+.childImageContainer{
+    @apply w-[604px] h-128 flex flex-col  mt-[0%]
+}
+}
+@media only screen and (max-width: 1100px) and (min-width: 765px)  {
+    .styledImageContainer{
+        @apply w-full h-[1460px] mt-[1px] flex flex-col items-center
+    }
+    .slideCardContainer{
+        @apply  grid grid-cols-2 h-[60%] w-auto
+    }
+    .rightGridStyles{
+        @apply w-auto  grid grid-cols-2 pl-[0px] mt-[0px] h-auto
+    }
+    .leftBlock{
+        @apply h-auto flex flex-col ml-2 mt-[10%] justify-center items-center
+    }
+    .leftHeading{
+        @apply text-white mb-[26px] 
+    }
+    .leftPara{
+        @apply text-white 
     }
     .leftButtons{
         @apply w-[182] px-0 
@@ -87,6 +125,7 @@
     @apply text-white
 }
 .childImageContainer{
-    @apply w-[604px] h-128 flex flex-col  
+    @apply w-[604px] h-128 flex flex-col  mt-[0%]
 }
+
 }

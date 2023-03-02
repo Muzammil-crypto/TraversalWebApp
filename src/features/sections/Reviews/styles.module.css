@@ -1,5 +1,5 @@
 .mainBox {
-  @apply h-[120vh] flex items-center justify-center flex-col  bg-blend mt-[30vh]
+  @apply h-[110vh] flex items-center justify-center flex-col  bg-blend mt-[30vh]
 }
 .feedBack{
     @apply h-10 w-80 bg-primary flex justify-center items-center flex-row
@@ -38,7 +38,7 @@
    @apply flex flex-col justify-center items-center h-24 w-24 rounded-full bg-primary my-5
 }
 .reviewPara{
-  @apply  h-12 w-144 text-white text-center
+  @apply  h-12 w-[60%] text-white text-center
 }
 .clientName{
     @apply pt-5 text-white

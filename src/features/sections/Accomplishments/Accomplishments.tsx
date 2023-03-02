@@ -9,7 +9,7 @@ export const Accomplishments = () => {
       <CustomImage
         height={774}
         width={1077}
-        url={"/acc.svg"}
+        url={"/history.svg"}
         alt={"Acmplshmnt"}
         classStyles={styles.introImg}
       />

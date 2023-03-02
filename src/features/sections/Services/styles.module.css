@@ -32,6 +32,16 @@
 .button{
   @apply bg-primary hover:bg-primary mt-5 rounded-md px-6
 }
+.swiperButtonsContainer{
+  @apply flex flex-row items-center justify-center w-screen absolute -mb-[5%] 
+}
+.leftButton{
+  @apply text-primary absolute left-8 
+}
+.rightButton{
+  @apply text-primary absolute right-8
+}
+
 
 @media (max-width: 768px) {
   .about{
@@ -55,3 +65,14 @@
 
 
 } 
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+  .swiperButtonsContainer{
+  @apply flex flex-row items-center justify-center w-screen absolute -mt-[20%]
+}
+.leftButton{
+  @apply text-primary absolute left-0 
+}
+.rightButton{
+  @apply text-primary absolute right-0
+}
+}

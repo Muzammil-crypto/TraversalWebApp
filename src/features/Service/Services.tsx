@@ -55,7 +55,14 @@ export const Services = () => {
           bannerStyles="w-[90%] h-[30%] my-10 mx-auto"
         />
         {/* section */}
-        <div className={styles.styledImageContainer}>
+        <div
+          style={{
+            backgroundImage: `url("/bgservices.svg")`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+          className={styles.styledImageContainer}
+        >
           <div className={styles.childImageContainer}>
             <div className={styles.leftBlock}>
               <H5 className={styles.leftHeading}>
@@ -86,7 +93,7 @@ export const Services = () => {
             <QualityCards />
             <QualityCards />
           </div>
-          <BackgroundEffects />
+          {/* <BackgroundEffects /> */}
         </div>
       </div>
     </>

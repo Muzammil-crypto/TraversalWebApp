@@ -15,7 +15,6 @@ import {
   typography,
   TypographyProps,
 } from "styled-system";
-import { SizeContext } from "@/contexts/sizeContext";
 import useWindowSize from "@/features/Sections/Processes/ProcessCard";
 
 interface CustomProps
@@ -55,7 +54,7 @@ const Typography: React.FC<CustomProps> = styled.div<CustomProps>`
 export const H1: React.FC<CustomProps> = (props) => (
   <Typography
     as="h1"
-    fontSize={useWindowSize().width <= 600 ? "34px" : "48px"}
+    fontSize={useWindowSize().width <= 600 ? "32px" : "48px"}
     fontWeight={700}
     lineHeight="56.25px"
     fontFamily={"sans-serif"}

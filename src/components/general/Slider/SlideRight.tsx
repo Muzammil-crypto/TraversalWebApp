@@ -9,12 +9,13 @@ export const SlideRight = (props: {
   const { onTap, classname, styles } = props;
   return (
     <div
+      onClick={onTap}
       style={styles}
       className={`border-primary p-1 rounded-full border-2 ${
         classname && classname
       }`}
     >
-      <EastOutlinedIcon fontSize="medium" onClick={onTap} />
+      <EastOutlinedIcon fontSize="medium" />
     </div>
   );
 };
