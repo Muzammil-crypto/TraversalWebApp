@@ -1,8 +1,8 @@
 .mainBox{
-    @apply h-1/2 w-screen flex items-center  flex-col mt-60 
+    @apply h-1/2 w-screen flex items-center  flex-col mt-60 text-black
 }
 .processes{
-    @apply flex flex-col justify-center mt-20 
+    @apply flex flex-col justify-center mt-20
 }
 .img{
     @apply ml-20
@@ -17,7 +17,7 @@
     @apply flex flex-row 
 }
 .headingContainer{
- @apply   mt-7 pl-[9%]
+ @apply   mt-7 pl-[9%] 
 
 }
 .img{

@@ -9,7 +9,7 @@ const gray = {
   300: "#E3E9EF",
   200: "#F3F5F9", // Line Stroke
   100: "#F6F9FC",
-  white: "#FFFFFF",
+  white: "#FFFFFF", 
 };
 
 const textColor = {

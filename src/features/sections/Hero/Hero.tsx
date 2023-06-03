@@ -45,7 +45,7 @@ export const Hero = (props: {
           </div>
           <div className={styles.rightBox}>
             <Image
-              alt="hero"
+              alt='hero'
               src={image ? image : "/hero.svg"}
               height={size.width && size.width <= 600 ? 280 : 575}
               width={size.width && size.width <= 600 ? 290 : 558}
@@ -55,11 +55,11 @@ export const Hero = (props: {
       </div>
       {showBullet && (
         <>
-          <Bullet bulletPoint="Advanced tech stack such as Elixir, Ruby-on-Rails, Flutter, Kotlin, Ionic, MEAN, Python etc" />
-          <Bullet bulletPoint="Integration of advanced technologies such as artificial intelligence, big data etc." />
-          <Bullet bulletPoint="Daily stand-up meetings with product managers" />
-          <Bullet bulletPoint="Staffing with 2 weeks" />
-          <Bullet bulletPoint="Try risk-free trial" />
+          <Bullet bulletPoint='Advanced tech stack such as Elixir, Ruby-on-Rails, Flutter, Kotlin, Ionic, MEAN, Python etc' />
+          <Bullet bulletPoint='Integration of advanced technologies such as artificial intelligence, big data etc.' />
+          <Bullet bulletPoint='Daily stand-up meetings with product managers' />
+          <Bullet bulletPoint='Staffing with 2 weeks' />
+          <Bullet bulletPoint='Try risk-free trial' />
         </>
       )}
     </div>

@@ -1,5 +1,5 @@
 .mainBox{
-    @apply h-screen w-screen flex items-center justify-center flex-col mt-96
+    @apply h-screen w-screen flex items-center justify-center flex-col mt-96 text-black
 }
 .childBox{
   @apply  w-screen h-3/4 mt-10 flex items-center justify-center flex-col

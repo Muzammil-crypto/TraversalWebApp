@@ -26,7 +26,7 @@
   @apply flex flex-row w-full items-center justify-center mt-48 absolute 
 }
 .teamCard{
-  @apply w-[320px] h-[500px]
+  @apply w-[320px] h-[500px] text-black
 }
 .designationBox{
   @apply w-[320px] h-[100px] flex flex-col justify-center items-center

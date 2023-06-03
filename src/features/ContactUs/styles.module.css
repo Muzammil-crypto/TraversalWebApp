@@ -1,5 +1,5 @@
 .mainBox{
-    @apply  h-full w-full
+    @apply  h-full w-full text-black
 }
 .heading{
     @apply text-center mt-[10%]
@@ -8,7 +8,7 @@
 @apply h-[255px] w-full flex flex-row items-center justify-center mt-[175px] 
 }
 .comSupportCard{
-    @apply flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-3xl justify-center mx-[21px] items-center h-[253px] w-[433px] my-4
+    @apply flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-3xl justify-center mx-[21px] items-center h-[253px] w-[433px] my-4 text-black
 }
 .comImageBox{
     @apply w-[293px] flex flex-col justify-center items-center
@@ -22,10 +22,10 @@
 @apply  grid grid-cols-2 items-center self-center justify-center  w-[900px]  ml-36
 }
 .fieldStyleOne{
-    @apply py-3 pl-2 w-[80%]
+    @apply py-3 pl-2 w-[80%] bg-white
 }
 .fieldStyleTwo{
-    @apply py-3 pl-2 w-[820px] h-[160px] 
+    @apply py-3 pl-2 w-[820px] h-[160px]  bg-white
 }
 .buttonContainer{
 @apply w-[750px]
@@ -34,7 +34,7 @@
     @apply bg-primary mr-auto px-28 rounded-lg mt-5 py-3 text-white hover:bg-white hover:text-primary
 }
 .dropDown{
-    @apply w-[80%]
+    @apply w-[80%] bg-white text-black
 }
 
 

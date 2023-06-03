@@ -2,7 +2,7 @@
     @apply h-full w-full
 }
 .heroBody{
-  @apply w-full h-3/4 mt-24
+  @apply w-full h-3/4 mt-24 text-black
 }
 .rowBox{
     @apply flex flex-row h-full
@@ -20,7 +20,7 @@
    @apply w-3/6 flex items-center justify-center 
 }
 .bullet{
-    @apply flex flex-row w-full items-center ml-[130px] mt-[30px]
+    @apply flex flex-row w-full items-center ml-[130px] mt-[30px] text-gray
 }
 .bulletHeading{
     @apply ml-3

@@ -14,7 +14,7 @@
     @apply rounded-xl py-44 
 }
 .jobCard{
-    @apply w-[90%] h-[95%] bg-card rounded-xl shadow-lg my-[20px] 
+    @apply w-[90%] h-[95%] bg-card rounded-xl shadow-lg my-[20px] text-black
 }
 .categoryButton{
     @apply w-[88%] ml-[30px] mt-[21px]
@@ -23,7 +23,7 @@
 @apply bg-primary text-white hover:bg-primary hover:text-white px-[35px] mt-[20px] 
 }
 .catButtonBox{
-    @apply hover:shadow-lg flex flex-row items-center justify-center w-[15%] h-[44px] rounded-lg text-primary bg-dim cursor-pointer mx-[12px]
+    @apply hover:shadow-lg flex flex-row items-center justify-center w-[25%] h-[44px] rounded-lg text-primary bg-dim cursor-pointer mx-[12px]
 }
 
 

@@ -46,7 +46,7 @@
     @apply cursor-pointer 
 }
 .cardContainer{
-   @apply  w-full h-full flex justify-center items-center mt-[45px]
+   @apply  w-full h-full flex justify-center items-center mt-[45px] text-black
 }
 
 
